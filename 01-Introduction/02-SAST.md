@@ -56,3 +56,44 @@ A static analysis tool developed by Facebook to detect issues like null pointer 
 - **Open-Source Tools:** These are typically free, community-supported tools, such as SonarLint, Brakeman, and SpotBugs, which can be used to scan and secure code in smaller or less resource-intensive environments.
 
 Both commercial and open-source tools can be integrated into a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate the detection of vulnerabilities and enforce secure coding practices.
+
+
+
+Demo Git repo URL for SAST: https://github.com/ManojKRISHNAPPA/buggy-application-devsecops.git
+
+Fortify link: https://www.opentext.com/products/fortify-on-demand/trial
+Once after subscribe the free trail
+![img_2.png](img_2.png)
+
+Here Launch the **OpenText Fortify On Demand**
+![img_3.png](img_3.png)
+
+https://trial.fortify.com/Applications?rpp=25&sortdir=Asc
+![img_4.png](img_4.png)
+
+This is how the UI looks
+
+## To scan our repository:
+
+1 --> Click on New application--> 
+![img_5.png](img_5.png)
+
+Once after save
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
+## Start Static Scan
+![img_8.png](img_8.png)
+### SAVE + SCAN
+
+### Upload your code in zip file
+![img_9.png](img_9.png)
+![img_10.png](img_10.png)
+
+## It will take 5 min to complete the scan:
+![img_11.png](img_11.png)
+![img_12.png](img_12.png)
+
+
+
