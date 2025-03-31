@@ -1,6 +1,14 @@
 # Software Bill of Materials (SBOM) and Software Composition Analysis (SCA)
 **Software Bill of Materials (SBOM)** is a comprehensive, machine-readable list or inventory of all the components, libraries, and dependencies that are used in a software product. An SBOM includes detailed metadata about each component, such as its version, licensing information, and any known vulnerabilities associated with it. The primary goal of an SBOM is to provide transparency into the components that make up software, helping organizations identify potential security vulnerabilities, licensing issues, or compatibility concerns. 
 
+**SBOM stands for "Software Bill of Materials"** is a list of all the software components and their versions
+that are included in a particular software application or system. The SBOM includes both the first-party
+components that were developed by the software vendor and the third-party components that were used
+to build the application. The purpose of an SBOM is to provide a complete and accurate inventory of all
+the components that make up a software application or system. SBOMs are an important part of
+software composition analysis (SCA) and are increasingly being used in the software development and
+maintenance process to ensure the security and compliance of applications.
+
 ### The key features of an SBOM include:
 
 -   A complete list of all third-party components and dependencies.
@@ -10,6 +18,15 @@
 -   Transparency for better risk management in supply chains.
 
 **Software Composition Analysis (SCA)**, on the other hand, is the practice of scanning software codebases for open-source and third-party components, identifying known vulnerabilities, licensing issues, and other risks. It typically goes beyond just creating an SBOM by automatically scanning the software for specific vulnerabilities, outdated libraries, and license conflicts. The SCA tools identify issues in the software components and dependencies and provide risk assessments based on up-to-date vulnerability databases (such as CVEs) and other factors.
+
+**Software Composition Analysis(SCA)** scan is a process of identifying and analyzing the third-party
+libraries, frameworks, and other components that are used in a software application. The goal of SCA is
+to identify potential security vulnerabilities, licensing issues, and other risks associated with the use of
+third-party components in an application.
+
+## Note: 
+-   SBOM handles the first party and third party libraries where as SCA handles only third party
+and Here SBOM is input for SCA
 
 ## The key differences between SBOM and SCA are:
 
@@ -55,3 +72,21 @@ SBOM focuses on providing a detailed inventory of software components for transp
 SCA scans for vulnerabilities, license compliance, and other risks associated with third-party components in a software project.
 
 Commercial tools like Black Duck, Snyk, and Veracode offer enterprise-grade solutions for SCA, while open-source tools like OWASP Dependency-Check, Retire.js, and OSS Index provide free options for managing software composition risks.
+
+# SCA DEMO WITH SNYK
+Repo for practice: https://github.com/ManojKRISHNAPPA/buggy-application-devsecops.git
+
+https://snyk.io/
+![img_14.png](img_14.png)
+![img_15.png](img_15.png)
+
+Login Via Github:
+![img_16.png](img_16.png)
+![img_17.png](img_17.png)
+![img_18.png](img_18.png)
+![img_19.png](img_19.png)
+
+SCA tool looks for third party here look for POM.xml
+![img_20.png](img_20.png)
+![img_21.png](img_21.png)
+
