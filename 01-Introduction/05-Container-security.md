@@ -205,3 +205,49 @@ Commercial Tools such as Aqua Security, Twistlock, Anchore, and Qualys offer com
 Open-Source Tools such as Clair, Trivy, Falco, and Kube-bench offer free solutions for scanning container images, auditing Kubernetes configurations, and monitoring runtime behavior.
 
 Both commercial and open-source tools are crucial for securing containerized environments throughout the development lifecycle, from building images to runtime monitoring.
+
+## Hands On: Container Security scan using Snyk
+
+### Install Snyk CLI on Ubuntu
+The Snyk CLI is a tool that helps you test your applications, including Docker containers, for vulnerabilities.
+
+**Step 1: Install Node.js and npm (if not already installed)**
+Snyk CLI requires Node.js and npm (Node Package Manager). Install them if you don't have them installed yet.
+
+```commandline
+sudo apt update
+sudo apt install -y nodejs npm
+```
+Verify the installtion:
+```commandline
+node -v
+npm -v
+```
+**Step 2: Install Snyk CLI globally using npm**
+```commandline
+sudo npm install -g snyk
+```
+**Step 3: Verify Installation**
+```commandline
+snyk --version
+```
+# 2. Test a Docker Container Using Snyk CLI
+**Step 1: Authenticate with Snyk**
+```commandline
+snyk auth
+```
+**Step 2: Test Docker Image for Vulnerabilities**
+```commandline
+snyk test --docker myapp:latest
+```
+
+**Option 2: Test an Image from Docker Hub**
+You can also test an image from a public registry like Docker Hub. For example, to test the official nginx image:
+```commandline
+snyk test --docker nginx
+```
+**Step 3: Monitor the Image**
+To continuously monitor the image for new vulnerabilities, use the monitor command:
+```commandline
+snyk monitor --docker myapp:latest
+```
