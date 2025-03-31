@@ -111,3 +111,24 @@ Commercial DAST tools such as Burp Suite, Acunetix, and Checkmarx offer advanced
 Open-source DAST tools like OWASP ZAP, Nikto, Wapiti, and Arachni provide cost-effective alternatives for dynamic security testing, although they may require more manual configuration and setup.
 
 Both commercial and open-source tools are essential for identifying runtime vulnerabilities and securing applications against various attack vectors.
+
+# DAST DEMO WITH OWASP ZAP HOSTED SCAN
+We can try this domin for testing https://example.com/
+Here is the website to try: https://hostedscan.com/owasp-vulnerability-scan
+![img_22.png](img_22.png)
+
+![img_23.png](img_23.png)
+![img_24.png](img_24.png)
+
+Once after signing along with domin you will recive email with report
+![img_25.png](img_25.png)
+https://api.hostedscan.com/reports/d2a7c889-31dc-4a4e-a8ef-1fc8a5afa039
+
+![img_26.png](img_26.png)
+![img_27.png](img_27.png)
+![img_34.png](img_34.png)
+[Owasp-report.pdf](..%2F..%2F..%2FDownloads%2FOwasp-report.pdf)
+https://api.hostedscan.com/reports/74d2f76d-aa8e-477f-be10-dd6e1164410d
+
+
+
