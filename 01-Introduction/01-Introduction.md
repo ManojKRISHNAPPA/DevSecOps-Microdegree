@@ -61,3 +61,30 @@
 **DevOps:** Focused on improving collaboration and speed between development and operations teams, but security may be a secondary concern.
 
 **DevSecOps:** Builds security into the DevOps lifecycle, ensuring that security is continuously managed, tested, and automated as part of the development and deployment processes.
+
+![img_1.png](img_1.png)
+
+## Roles and Responsibilities of DevSecOps Engineer:-
+-  Perform Static Application Security Testing (SAST) using IDE plugins, such as SonarLint.
+
+-  Implement credential scanning tools, like GitGuardian, in the CI/CD pipeline or at the commit level, e.g., GIT Secrets.
+
+-  Integrate SAST tools, such as SonarQube, SonarCloud, Fortify Source Code Analysis, Veracode, and Checkmarx, into the CI/CD pipeline.
+
+-  Integrate Software Composition Analysis (SCA) tools, like OWASP Dependency Check, Snyk, and Black Duck, into the CI/CD pipeline.
+
+-  Integrate Dynamic Application Security Testing (DAST) tools, such as OWASP ZAP, WebInspect, Veracode DAST, and Burp Suite, into the CI/CD pipeline.
+
+-  Integrate container scanning tools, like Trivy and AQUA, into the CI/CD pipeline.
+
+-  Integrate Infrastructure as Code (IaC) scanning tools, like Snyk and Bridgecrew, into the CI/CD pipeline.
+
+-  Perform SAST, SCA, and DAST security scans and conduct false positive analysis on security vulnerabilities.
+
+-  Report security vulnerabilities in a ticketing tool, like JIRA, and assign tickets to the development team to fix these vulnerabilities.
+
+-  Write scripts in YAML and other scripting languages to integrate security tools into the CI/CD pipelines. This is also known as the Shift Left approach.
+
+-  Improve the DevSecOps maturity level of overall development processes.
+
+-  Implement cloud security controls and recommendations for compliance.
