@@ -251,3 +251,27 @@ To continuously monitor the image for new vulnerabilities, use the monitor comma
 ```commandline
 snyk monitor --docker myapp:latest
 ```
+
+
+# Scanning via TRIVY
+**Step 1:** Install the Trivy
+https://trivy.dev/v0.18.3/installation/
+
+**Step 2:** Scan a Docker Image with Trivy
+Run the Trivy scan: To scan a Docker image, simply run the following command:
+```commandline
+trivy image <image-name>
+```
+For example, to scan the official nginx Docker image, use:
+```commandline
+trivy image nginx
+```
+**Step 3:** Scan for specific vulnerabilities (optional): You can also narrow down your scan by searching for specific types of vulnerabilities (e.g., os or library):
+```commandline
+trivy image --vuln-type=os nginx:latest
+```
+
+Example for JSON output:
+```commandline
+trivy image --format json nginx:latest
+```
