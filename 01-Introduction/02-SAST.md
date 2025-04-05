@@ -62,6 +62,7 @@ Both commercial and open-source tools can be integrated into a Continuous Integr
 Demo Git repo URL for SAST: https://github.com/ManojKRISHNAPPA/buggy-application-devsecops.git
 
 Fortify link: https://www.opentext.com/products/fortify-on-demand/trial
+https://my.opentext.com/products/fortify-on-demand
 Once after subscribe the free trail
 ![img_2.png](img_2.png)
 
