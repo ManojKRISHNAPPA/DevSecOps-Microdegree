@@ -34,3 +34,15 @@ Description
 5.  Sending security directives to clients, e.g., Security Headers.
 
 6. An automated process to verify the effectiveness of the configurations and settings in all environments.
+
+## Attacking the missconfiguration:
+https://help.owasp-juice.shop/part2/security-misconfiguration.html
+![img_13.png](img_13.png)
+![img_14.png](img_14.png)
+![img_16.png](img_16.png)
+
+modifying the URL:
+![img_17.png](img_17.png)
+
+accessing ftp location:
+![img_18.png](img_18.png)
