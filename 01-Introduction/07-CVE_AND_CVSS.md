@@ -1,23 +1,26 @@
 # CVE AND CVSS
-1. **CVE (Common Vulnerabilities and Exposures)** is a database of publicly disclosed cybersecurity
+1. **(CWE)** Common Weakness Enumeration (CWE):
+   Is a list of common software weakness that could lead to security vulnerabilitie. It is a standarized way of identifying and
+   describing these weaknesses so that they can be easily understood
+2. **CVE (Common Vulnerabilities and Exposures)** is a database of publicly disclosed cybersecurity
 vulnerabilities. It is maintained by the **MITRE** Corporation, a nonprofit organization that provides
 technical expertise to the U.S. government. Each CVE entry includes a unique identifier, a
 description of the vulnerability, and information about the affected software or hardware.
 
-2. **CVSS (Common Vulnerability Scoring System)** is a standardized method for evaluating the
+3. **CVSS (Common Vulnerability Scoring System)** is a standardized method for evaluating the
 severity of vulnerabilities. It is designed to provide a consistent way of measuring the risk posed by
 a particular vulnerability, regardless of the specific software or hardware affected.
 
-3. **CVSS** scores are based on a number of factors including the potential impact of the vulnerability,
+4. **CVSS** scores are based on a number of factors including the potential impact of the vulnerability,
 the likelihood that it will be exploited, and the ease with which it can be exploited. Scores range
 from 0 to 10, with higher scores indicating greater severity.
 
-4. **CVSS** scores are often used to prioritize the response to vulnerabilities, with the most severe
+5. **CVSS** scores are often used to prioritize the response to vulnerabilities, with the most severe
 vulnerabilities being addressed first. They are also used by security analysts and others to
 compare the severity of different vulnerabilities and to understand the relative risk posed by
 different vulnerabilities.
 
-5. While performing False Positive Analysis, the severity of the incident needs be considered after
+6. While performing False Positive Analysis, the severity of the incident needs be considered after
 reviewing these scores by the DevSecOps Engineer
 
 ## Here's a list of some common software weaknesses that can lead to vulnerabilities in applications. These weaknesses are often documented in the Common Weakness Enumeration (CWE), which helps identify and categorize security flaws.
