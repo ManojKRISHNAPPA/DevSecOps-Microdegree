@@ -20,6 +20,107 @@ different vulnerabilities.
 5. While performing False Positive Analysis, the severity of the incident needs be considered after
 reviewing these scores by the DevSecOps Engineer
 
+## Here's a list of some common software weaknesses that can lead to vulnerabilities in applications. These weaknesses are often documented in the Common Weakness Enumeration (CWE), which helps identify and categorize security flaws.
+### 1. Improper Input Validation (CWE-20)
+Description: Failing to properly validate user input, allowing attackers to inject malicious data (e.g., SQL injection, cross-site scripting).
+
+Example: Not validating user inputs for type, length, format, or range.
+
+### 2. Buffer Overflow (CWE-120)
+Description: A situation where more data is written to a buffer than it can hold, potentially leading to the execution of arbitrary code.
+
+Example: Writing user input to a fixed-size buffer without checking its size.
+
+### 3. SQL Injection (CWE-89)
+Description: Allowing attackers to manipulate SQL queries by injecting malicious SQL code through user inputs.
+
+Example: Failing to sanitize user input before using it in SQL queries.
+
+### 4. Cross-Site Scripting (XSS) (CWE-79)
+Description: Allowing attackers to inject malicious scripts into web pages viewed by other users, leading to session hijacking or data theft.
+
+Example: Displaying user-provided input (e.g., comments or names) without proper escaping.
+
+### 5. Improper Authentication (CWE-287)
+Description: Failing to properly verify the identity of a user, allowing attackers to bypass authentication mechanisms.
+
+Example: Weak passwords, unencrypted password storage, or failure to enforce strong authentication.
+
+### 6. Cross-Site Request Forgery (CSRF) (CWE-352)
+Description: Attacker tricks the victim into making a request to a web application on which the victim is authenticated, leading to unauthorized actions.
+
+Example: Attacker sends a malicious link to an authenticated user that performs an action on their behalf without their consent.
+
+### 7. Insecure Deserialization (CWE-502)
+Description: Deserializing untrusted data can allow attackers to execute arbitrary code or tamper with internal data.
+
+Example: Accepting serialized data from users and deserializing it without proper validation.
+
+### 8. Improper Access Control (CWE-284)
+Description: Not properly restricting access to resources or functionality based on user roles or permissions.
+
+Example: Allowing a regular user to access admin pages or perform privileged operations.
+
+### 9. Sensitive Data Exposure (CWE-200)
+Description: Failing to protect sensitive data (e.g., passwords, credit card numbers, personal information), which can lead to theft or misuse.
+
+Example: Storing sensitive data in plain text or not using encryption when transmitting data.
+
+### 10. Broken Cryptography (CWE-327)
+Description: Using weak or broken cryptographic algorithms, which attackers can exploit to decrypt or tamper with sensitive data.
+
+Example: Using outdated encryption methods like DES or MD5 for hashing passwords.
+
+### 11. Security Misconfiguration (CWE-16)
+Description: Default settings or insecure configuration options in software, hardware, or services that are not properly hardened before deployment.
+
+Example: Leaving default passwords in place, misconfigured security headers, or exposing sensitive services to the public.
+
+### 12. Race Condition (CWE-362)
+Description: A flaw where the timing of actions in the system allows an attacker to manipulate the system state.
+
+Example: Two processes trying to modify the same resource simultaneously, leading to inconsistent results or failures.
+
+### 13. Untrusted Search Path (CWE-427)
+Description: Allowing attackers to specify or control the location of executable files, leading to the execution of malicious code.
+
+Example: Using a user-controlled search path to locate shared libraries.
+
+### 14. Improper Error Handling (CWE-703)
+Description: Failing to properly handle errors or exceptions in a way that prevents attackers from gaining insights into the internal workings of an application.
+
+Example: Displaying detailed error messages (e.g., stack traces) to end-users.
+
+### 15. Insufficient Logging and Monitoring (CWE-778)
+Description: Failing to log important security events or monitor for suspicious activities, making it harder to detect and respond to attacks.
+
+Example: Not logging login attempts or other critical operations, allowing attackers to perform actions without being detected.
+
+### 16. Missing Authorization (CWE-863)
+Description: Failing to enforce authorization checks properly, allowing unauthorized users to perform restricted actions.
+
+Example: An unprivileged user being able to access or modify resources they should not have access to.
+
+### 17. Using Components with Known Vulnerabilities (CWE-1104)
+Description: Using outdated or unpatched third-party libraries or components with known security vulnerabilities.
+
+Example: Failing to update libraries when a security patch is released.
+
+### 18. Directory Traversal (CWE-22)
+Description: Allowing attackers to access files outside of the intended directory, potentially leading to the exposure of sensitive files.
+
+Example: Failing to sanitize file paths in a web application, allowing attackers to access system files by manipulating the path.
+
+### 19. LDAP Injection (CWE-90)
+Description: Injecting malicious code into LDAP queries through unvalidated user input, allowing attackers to bypass authentication or gain unauthorized access to sensitive information.
+
+Example: Failing to sanitize user input used in an LDAP query.
+
+### 20. Command Injection (CWE-77)
+Description: Allowing attackers to execute arbitrary system commands on the server by injecting malicious input.
+
+Example: Passing unsanitized user input directly to system commands or shell scripts.
+
 ## Example:
 ### What is Log4j?
 Log4j is a Java-based logging utility. Essentially, it helps developers track and record what's happening in their applications, making it easier to monitor and troubleshoot. It's part of the Apache Logging Services project and is widely used in Java applications.
